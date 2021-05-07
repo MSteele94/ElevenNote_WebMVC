@@ -23,6 +23,8 @@ namespace ElevenNote_Services
                 new Note()
                 {
                     OwnerId = _userId,
+                    CategoryId = (model.CategoryId is null) ? null : model.CategoryId,
+                    Subject = model.Subject,
                     Title = model.Title,
                     Content = model.Content,
                     CreatedUtc = DateTimeOffset.Now
@@ -47,6 +49,7 @@ namespace ElevenNote_Services
                         {
                             NoteId = e.NoteId,
                             Title = e.Title,
+                            Subject = e.Subject,
                             IsStarred = e.IsStarred,
                             CreatedUtc = e.CreatedUtc
                         }
@@ -66,7 +69,9 @@ namespace ElevenNote_Services
                     new NoteDetail
                     {
                         NoteId = entity.NoteId,
+                        CategoryId = (entity.CategoryId is null) ? null : entity.CategoryId,
                         Title = entity.Title,
+                        Subject = entity.Subject,
                         Content = entity.Content,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
@@ -84,6 +89,7 @@ namespace ElevenNote_Services
 
                 entity.Title = model.Title;
                 entity.Content = model.Content;
+                entity.Subject = model.Subject;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
                 entity.IsStarred = model.IsStarred;
 

@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202105051459491_InitialCreate.cs" />
     <Compile Include="Migrations\202105051459491_InitialCreate.Designer.cs">
@@ -74,6 +75,30 @@
     <Compile Include="Migrations\202105060107303_InitMigration.cs" />
     <Compile Include="Migrations\202105060107303_InitMigration.Designer.cs">
       <DependentUpon>202105060107303_InitMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061432198_AddedCategory.cs" />
+    <Compile Include="Migrations\202105061432198_AddedCategory.Designer.cs">
+      <DependentUpon>202105061432198_AddedCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061537168_SecondMigration.cs" />
+    <Compile Include="Migrations\202105061537168_SecondMigration.Designer.cs">
+      <DependentUpon>202105061537168_SecondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061554082_ThirdMigration.cs" />
+    <Compile Include="Migrations\202105061554082_ThirdMigration.Designer.cs">
+      <DependentUpon>202105061554082_ThirdMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061738100_FourthMigration.cs" />
+    <Compile Include="Migrations\202105061738100_FourthMigration.Designer.cs">
+      <DependentUpon>202105061738100_FourthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061752283_Ihatemigrations.cs" />
+    <Compile Include="Migrations\202105061752283_Ihatemigrations.Designer.cs">
+      <DependentUpon>202105061752283_Ihatemigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105061808046_Ihatemigrations2.cs" />
+    <Compile Include="Migrations\202105061808046_Ihatemigrations2.Designer.cs">
+      <DependentUpon>202105061808046_Ihatemigrations2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
@@ -89,6 +114,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105060107303_InitMigration.resx">
       <DependentUpon>202105060107303_InitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061432198_AddedCategory.resx">
+      <DependentUpon>202105061432198_AddedCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061537168_SecondMigration.resx">
+      <DependentUpon>202105061537168_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061554082_ThirdMigration.resx">
+      <DependentUpon>202105061554082_ThirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061738100_FourthMigration.resx">
+      <DependentUpon>202105061738100_FourthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061752283_Ihatemigrations.resx">
+      <DependentUpon>202105061752283_Ihatemigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105061808046_Ihatemigrations2.resx">
+      <DependentUpon>202105061808046_Ihatemigrations2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ElevenNote_Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -12,6 +14,11 @@ namespace ElevenNote_WebMVC.Models
         [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]
         [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
         public string Title { get; set; }
+        [ForeignKey(nameof(Category))]
+        public int? CategoryId { get; set; }
+        [Display(Name = "Note Subject")]
+        public string Subject { get; set; }
+        public virtual Category Category { get; set; }
         [MaxLength(8000)]
         public string Content { get; set; }
     }

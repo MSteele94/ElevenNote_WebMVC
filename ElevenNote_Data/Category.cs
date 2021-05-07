@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElevenNote_Models
+namespace ElevenNote_Data
 {
-    public class NoteEdit
+    public class Category
     {
-        public int NoteId { get; set; }
-        public string Title { get; set; }
+        [Key]
+        public int? CategoryId { get; set; }
         [Display(Name = "Note Subject")]
         public string Subject { get; set; }
-        public string Content { get; set; }
-        public bool IsStarred { get; set; }
+        public ICollection<Note> Notes { get; set; }
+        //public virtual List<Note> Notes { get; set; } = new List<Note>();
     }
 }
